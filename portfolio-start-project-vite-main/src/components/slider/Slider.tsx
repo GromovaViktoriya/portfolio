@@ -66,6 +66,7 @@ const Pagination = styled.div`
         &.active {
             background: ${theme.colors.accent};
             width: 20px;
+            border-radius: 20px;
         }
     }
 `

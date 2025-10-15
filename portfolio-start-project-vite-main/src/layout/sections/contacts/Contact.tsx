@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {Button} from "../../../components/Button.tsx";
 import {Container} from "../../../components/Container.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 export const Contact = () => {
     return (
@@ -20,18 +21,42 @@ export const Contact = () => {
 };
 
 const StyledContact = styled.section`
-    min-height: 50vh;
-    background-color: #fffad5;
+
 `
 
 const StyledForm = styled.form`
-    max-width: 500px;
+    max-width: 540px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 16px;
     margin: 0 auto;
+    
+    textarea {
+        resize: none;
+        height: 155px;
+    }
 `
 const Field = styled.input`
+    width: 100%;
+    background-color: ${theme.colors.secondaryBG};
+    border: 1px solid ${theme.colors.borderColor};
+    padding: 7px 15px;
 
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: ${theme.colors.font};
+
+    &::placeholder {
+        color: ${theme.colors.placeholderColor};
+        text-transform: capitalize;
+    }
+    
+    &:focus {
+        outline: 1px solid ${theme.colors.borderColor};
+    }
+    
 `
