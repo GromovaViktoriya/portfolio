@@ -20,10 +20,10 @@ const StyledMenu = styled.nav`
 `
 
 const StyledUl = styled.ul`
-display: flex;
+    display: flex;
     gap: 145px;
 `
 
 const ListItem = styled.li`
- 
+
 `

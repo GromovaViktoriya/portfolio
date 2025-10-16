@@ -72,10 +72,7 @@ export const GlobalStyle = createGlobalStyle`
         cursor: pointer;
         color: #000;
     }
-
-    section {
-        padding: 100px 0;
-    }
+    
 
     section:nth-of-type(odd) {
         background-image: ${theme.colors.primaryBG};
@@ -85,15 +82,15 @@ export const GlobalStyle = createGlobalStyle`
         background-image: ${theme.colors.secondaryBG};
     }
 
-    h3 {
+    h1, h2, h3  {
         font-family: "NEXT ART", sans-serif;
-        font-weight: 400;
-        font-size: 48px;
+        color: ${theme.colors.font};
     }
-
+   
     p {
         font-weight: 300;
         font-size: 18px;
+        color: ${theme.colors.font};
     }
 
 `

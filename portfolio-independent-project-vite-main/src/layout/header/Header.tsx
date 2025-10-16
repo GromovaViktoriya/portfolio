@@ -3,7 +3,6 @@ import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
 import {Logo} from "../../components/logo/Logo.tsx";
 import {Menu} from "../../components/menu/Menu.tsx";
-import {theme} from "../../styles/Theme.ts";
 
 const menuItems = ["Home", "About me", "Portfolio", "Contact"]
 
@@ -21,6 +20,6 @@ export const Header = () => {
 }
 
 const StyledHeader = styled.header`
-    background-image: ${theme.colors.primaryBG};
     padding: 26px 0;
+    margin-bottom: 13px;
 `
