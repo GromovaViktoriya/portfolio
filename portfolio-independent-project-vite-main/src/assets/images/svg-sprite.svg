@@ -1,0 +1,151 @@
+<svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <!--    burger-tabMenu-->
+    <g id="burger-menu">
+        <path d="M32 23.5L5 23.5M32 12L5 12" stroke="#00C4F0" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </g>
+
+    <!--    close-tabMenu-->
+    <g id="close-menu">
+        <path d="M29 8L5.99999 27.5M29 27.5L5.99999 8" stroke="#00C4F0" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </g>
+
+    <!--logo-->
+    <g id="logo">
+        <path d="M5.41669 24L17.0233 42L32.5 29L5.41669 24Z" stroke="#00C1EC" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M59.5833 24L47.9768 42L32.5 29L59.5833 24Z" stroke="#00C1EC" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M17.6042 42H47.3959L32.5 29L17.6042 42Z" stroke="#00C1EC" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M16.25 26L32.5 4L48.75 26" stroke="#00C1EC" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+
+
+    <!--skills-->
+    <g id="product-design">
+        <g clip-path="url(#clip0_4_6706)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M68.498 84.6435C68.4984 84.9518 68.438 85.2571 68.3202 85.542C68.2024 85.8269 68.0295 86.0857 67.8115 86.3037C67.5935 86.5217 67.3347 86.6946 67.0498 86.8124C66.7649 86.9302 66.4596 86.9906 66.1513 86.9902L39.6348 86.9902C39.3265 86.9906 39.0212 86.9302 38.7363 86.8124C38.4514 86.6946 38.1925 86.5217 37.9745 86.3037C37.7566 86.0857 37.5837 85.8269 37.4659 85.542C37.3481 85.2571 37.2877 84.9518 37.2881 84.6435L37.2881 72.0349L29.0547 58.306C28.4275 57.2609 28.0828 56.0707 28.0543 54.8521C28.0258 53.6336 28.3146 52.4286 28.8923 51.3553L52.893 6.77777L76.8971 51.3586C77.4736 52.4311 77.7617 53.6349 77.7332 54.8521C77.7047 56.0693 77.3607 57.2583 76.7347 58.3027L68.498 72.0283L68.498 84.6435ZM64.8255 69.0385L72.7141 55.893C72.9236 55.5441 73.0387 55.1467 73.048 54.7399C73.0573 54.3331 72.9605 53.9308 72.7672 53.5728L52.8964 16.6651L33.0189 53.5794C32.8279 53.9365 32.7327 54.3371 32.7426 54.742C32.7524 55.1468 32.8671 55.5423 33.0753 55.8897L40.9639 69.0418L64.8288 69.0418L64.8255 69.0385Z"
+                  fill="#00C4F0"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M52.6943 17.0398L49.5786 48.1834C48.923 48.839 48.4766 49.6742 48.2957 50.5835C48.1149 51.4928 48.2077 52.4353 48.5625 53.2918C48.9173 54.1483 49.5181 54.8804 50.2889 55.3955C51.0598 55.9106 51.9661 56.1855 52.8932 56.1855C53.8203 56.1855 54.7265 55.9106 55.4974 55.3955C56.2682 54.8804 56.8691 54.1483 57.2238 53.2918C57.5786 52.4353 57.6715 51.4928 57.4906 50.5835C57.3097 49.6742 56.8633 48.839 56.2077 48.1834L53.092 17.0398L52.8932 16.6685L52.6943 17.0398Z"
+                  fill="#00C4F0"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_4_6706">
+                <rect width="75" height="75" fill="white" transform="translate(106.744 54) rotate(135)"/>
+            </clipPath>
+        </defs>
+    </g>
+
+    <g id="icon-design">
+        <g clip-path="url(#clip0_4_6719)">
+            <path d="M19.2431 0H74.0627V16.3094H19.2431V0Z" fill="#00C4F0"/>
+            <path d="M19.2431 29.3438H74.0627V45.6531H19.2431V29.3438Z" fill="#00C4F0"/>
+            <path d="M19.2431 58.6906H74.0627V75H19.2431V58.6906Z" fill="#00C4F0"/>
+            <path d="M0 0H13.9795V16.3094H0V0Z" fill="#00C4F0"/>
+            <path d="M0 29.3438H13.9795V45.6531H0V29.3438Z" fill="#00C4F0"/>
+            <path d="M0 58.6906H13.9795V75H0V58.6906Z" fill="#00C4F0"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_4_6719">
+                <rect width="75" height="75" fill="white"/>
+            </clipPath>
+        </defs>
+    </g>
+
+    <g id="logo-design">
+        <path d="M9.375 37.5H37.5V65.625H9.375V37.5Z" fill="#00C4F0"/>
+        <path d="M37.5 9.375H65.625V37.5H37.5V9.375Z" fill="#00C4F0"/>
+    </g>
+
+    <g id="backend">
+        <path d="M23.0468 52.4406L26.9531 47.5594L14.3781 37.5L26.9531 27.4406L23.0468 22.5594L7.42185 35.0594C7.05574 35.3521 6.76018 35.7235 6.55707 36.146C6.35396 36.5684 6.2485 37.0312 6.2485 37.5C6.2485 37.9687 6.35396 38.4315 6.55707 38.854C6.76018 39.2765 7.05574 39.6478 7.42185 39.9406L23.0468 52.4406ZM51.9531 22.5594L48.0468 27.4406L60.6218 37.5L48.0468 47.5594L51.9531 52.4406L67.5781 39.9406C67.9442 39.6478 68.2398 39.2765 68.4429 38.854C68.646 38.4315 68.7514 37.9687 68.7514 37.5C68.7514 37.0312 68.646 36.5684 68.4429 36.146C68.2398 35.7235 67.9442 35.3521 67.5781 35.0594L51.9531 22.5594ZM46.8 10.05L34.3 66.3L28.1968 64.9437L40.6968 8.69373L46.8 10.05Z"
+              fill="#00C4F0"/>
+    </g>
+
+    <g id="frontend">
+        <path d="M0 18.75C0 18.75 0 9.375 9.375 9.375H65.625C65.625 9.375 75 9.375 75 18.75V46.875C75 46.875 75 56.25 65.625 56.25H46.875C46.875 59.3766 47.2641 61.7203 48.0469 63.2812H51.5625C52.1841 63.2812 52.7802 63.5282 53.2198 63.9677C53.6593 64.4073 53.9062 65.0034 53.9062 65.625C53.9062 66.2466 53.6593 66.8427 53.2198 67.2823C52.7802 67.7218 52.1841 67.9688 51.5625 67.9688H23.4375C22.8159 67.9688 22.2198 67.7218 21.7802 67.2823C21.3407 66.8427 21.0938 66.2466 21.0938 65.625C21.0938 65.0034 21.3407 64.4073 21.7802 63.9677C22.2198 63.5282 22.8159 63.2812 23.4375 63.2812H26.9531C27.7359 61.7203 28.125 59.3766 28.125 56.25H9.375C9.375 56.25 0 56.25 0 46.875V18.75ZM6.55312 14.7422C6.03823 15.1007 5.62743 15.5891 5.3625 16.1578C4.96293 16.9834 4.73339 17.8808 4.6875 18.7969V46.875C4.6875 48.3984 5.05312 49.2281 5.36719 49.6969C5.69531 50.1891 6.16406 50.5781 6.78281 50.8875C7.57283 51.2702 8.42893 51.4977 9.30469 51.5578L9.42188 51.5625H65.625C67.1484 51.5625 67.9781 51.1969 68.4469 50.8828C68.9618 50.5243 69.3726 50.0359 69.6375 49.4672C70.0202 48.6772 70.2477 47.8211 70.3078 46.9453L70.3125 46.8281V18.75C70.3125 17.2266 69.9469 16.3969 69.6328 15.9281C69.2745 15.4131 68.786 15.0022 68.2172 14.7375C67.3916 14.3379 66.4942 14.1084 65.5781 14.0625H9.375C7.85156 14.0625 7.02187 14.4281 6.55312 14.7422Z"
+              fill="#00C4F0"/>
+    </g>
+
+    <g id="motion">
+        <path d="M43.75 6.25H12.5C10.8424 6.25 9.25268 6.90848 8.08058 8.08058C6.90848 9.25268 6.25 10.8424 6.25 12.5V43.75H12.5V12.5H43.75V6.25ZM56.25 18.75H25C23.3424 18.75 21.7527 19.4085 20.5806 20.5806C19.4085 21.7527 18.75 23.3424 18.75 25V56.25H25V25H56.25V18.75ZM62.5 31.25H37.5C35.8424 31.25 34.2527 31.9085 33.0806 33.0806C31.9085 34.2527 31.25 35.8424 31.25 37.5V62.5C31.25 64.1576 31.9085 65.7473 33.0806 66.9194C34.2527 68.0915 35.8424 68.75 37.5 68.75H62.5C65.9375 68.75 68.75 65.9375 68.75 62.5V37.5C68.75 34.0625 65.9375 31.25 62.5 31.25Z"
+              fill="#00C4F0"/>
+    </g>
+
+    <!--circles-->
+    <g id="big-circle">
+        <g filter="url(#filter0_d_4_6680)">
+            <circle cx="466" cy="462" r="351.5" stroke="#E4E4E4" stroke-width="89" shape-rendering="crispEdges"/>
+        </g>
+        <defs>
+            <filter id="filter0_d_4_6680" x="0" y="0" width="932" height="932" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                               result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="35"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_6680"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_6680" result="shape"/>
+            </filter>
+        </defs>
+    </g>
+
+    <g id="middle-circle">
+        <g filter="url(#filter0_d_4_6681)">
+            <circle cx="313" cy="309" r="215.5" stroke="#00C4F0" stroke-width="55" shape-rendering="crispEdges"/>
+        </g>
+        <defs>
+            <filter id="filter0_d_4_6681" x="0" y="0" width="626" height="626" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                               result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="35"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.756863 0 0 0 0 0.92549 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_6681"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_6681" result="shape"/>
+            </filter>
+        </defs>
+    </g>
+
+    <g id="mini-circle">
+        <g filter="url(#filter0_d_4_6682)">
+            <circle cx="248" cy="244" r="161" stroke="#E2A200" stroke-width="34" shape-rendering="crispEdges"/>
+        </g>
+        <defs>
+            <filter id="filter0_d_4_6682" x="0" y="0" width="496" height="496" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                               result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="35"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0.886275 0 0 0 0 0.635294 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_6682"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_6682" result="shape"/>
+            </filter>
+        </defs>
+    </g>
+
+    <!--arrows-->
+    <g id="arrow-right">
+        <path d="M19.5 7.5L30 18L19.5 28.5" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M30 18H6" stroke="#E4E4E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g id="arrow-small">
+        <path d="M0 5H13M13 5L10.0286 9M13 5L10.0286 1" stroke="#E2A100"/>
+    </g>
+</svg>
