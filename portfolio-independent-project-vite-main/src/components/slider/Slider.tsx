@@ -27,7 +27,7 @@ export const Slider = () => {
 }
 
 
-const ArrowWrapper = styled.div`
+export const ArrowWrapper = styled.div`
     width: 36px;
     height: 36px;
     cursor: pointer;
