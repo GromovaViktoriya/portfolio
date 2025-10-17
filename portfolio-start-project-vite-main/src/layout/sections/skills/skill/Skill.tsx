@@ -39,20 +39,20 @@ const SkillText = styled.p`
 `;
 
 export const IconWrapper = styled.div`
-position: relative;
-    &::before{
+    position: relative;
+    &::before {
         content: "";
         display: inline-block;
         width: 80px;
         height: 80px;
         background-color: rgba(255, 255, 255, 0.1);
-        
+
         position: absolute;
         left: 50%;
         top: 50%;
         //точка трансформирования установлена по дефолту от центра элемента, перезадаю ее через transform-origin 
         //на верхний левый угол
         transform-origin: top left;
-        transform: rotate(45deg) translate(-50%, -50%) ;
+        transform: rotate(45deg) translate(-50%, -50%);
     }
 `

@@ -7,18 +7,16 @@ import {theme} from "../../../styles/Theme.ts";
 type SlidePropsType = {
     text: string,
     image: string,
+    imageAlt: string,
     title: string,
 }
-
-type ImageWrapperPropsType = {
-    image: string,
-}
-
 
 export const Slide = (props:SlidePropsType) => {
     return (
         <StyledSlide>
-            <ImageWrapper image={props.image}></ImageWrapper>
+            <ImageWrapper>
+                <img src={props.image} alt={props.imageAlt}/>
+            </ImageWrapper>
             <FlexWrapper direction={"column"} gap={"25px"}>
                 <StyledTitle>{props.title}</StyledTitle>
                 <StyledText>{props.text}</StyledText>
@@ -50,16 +48,17 @@ const StyledSlide = styled.div`
     }
 `
 
-const ImageWrapper = styled.div<ImageWrapperPropsType>`
+const ImageWrapper = styled.div`
     width: 493px;
     height: 500px;
-    border-radius: 29px;
-    
-    background-image: url(${props => props.image});
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+   
+
+    img {
+        width: 100%;
+        border-radius: 29px;
+    }
 `
+
 const StyledText = styled.p`
     max-width: 296px;
     font-weight: 300;

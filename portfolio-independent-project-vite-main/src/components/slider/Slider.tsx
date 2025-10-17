@@ -15,7 +15,7 @@ export const Slider = () => {
                     <Icon iconId={"arrow-left"} width={"36px"} height={"36px"} viewBox={"0 0 36 36"}/>
                 </ArrowWrapper>
 
-                <Slide image={PortfolioImg} title={"Landing Ice-cream"}
+                <Slide image={PortfolioImg} imageAlt={"Project 1"} title={"Landing Ice-cream"}
                        text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut orci eu elit consequat posuere ut sed elit. Nulla et tristique felis. Morbi quis orci non purus blandit fringilla. Etiam et mollis eros. Duis venenatis vulputate lacus, non tristique eros placerat vel. Nam nec magna lacus. Etiam euismod egestas mauris nec mollis. Phasellus efficitur et ex vel condimentum. Cras enim purus, tempor sed massa vel, accumsan bibendum magna. Nullam hendrerit cursus purus, sit amet viverra arcu gravida vel."}/>
 
                 <ArrowWrapper>
@@ -26,19 +26,37 @@ export const Slider = () => {
     )
 }
 
-const StyledSlider = styled.div`
-
-`
 
 const ArrowWrapper = styled.div`
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    background-image: ${theme.colors.secondaryAccent};
+    width: 36px;
+    height: 36px;
     cursor: pointer;
+
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-image: ${theme.colors.secondaryAccent};
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+`
+
+const StyledSlider = styled.div`
+    ${ArrowWrapper}:first-child {
+        margin-left: 12px;
+    }
+
+    ${ArrowWrapper}:last-child {
+        margin-right: 12px;
+    }
 `
