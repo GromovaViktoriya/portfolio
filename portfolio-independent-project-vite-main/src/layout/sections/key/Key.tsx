@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Skill} from "./skill/Skill.tsx";
 import {Container} from "../../../components/Container.tsx";
+import {Title} from "../../../components/Title.tsx";
 
 export const Key = () => {
     return (
@@ -21,7 +22,7 @@ export const Key = () => {
                     </FlexWrapper>
                 </StyledSkills>
                 <StyledAbout>
-
+                    <Title text={"About me"}/>
                 </StyledAbout>
             </Container>
         </StyledKey>
@@ -32,8 +33,9 @@ const StyledKey = styled.section`
     padding: 113px 0 159px;
 `
 const StyledSkills = styled.div`
-
+    margin-bottom: 103px;
 `
 const StyledAbout = styled.div`
-
+    margin-bottom: 114px;
+    
 `

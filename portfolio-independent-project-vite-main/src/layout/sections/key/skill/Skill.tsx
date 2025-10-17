@@ -10,7 +10,12 @@ type SkillPropsType = {
     viewBox?: string,
     marginTop?: string,
 }
-export const Skill = (props:SkillPropsType) => {
+
+type IconWrapperPropsType = {
+    marginTop?: string,
+}
+
+export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill>
             <IconWrapper marginTop={props.marginTop}>
@@ -27,7 +32,7 @@ const StyledSkill = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
     width: 270px;
     height: 270px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.47);
@@ -35,9 +40,10 @@ const StyledSkill = styled.div`
     border-radius: 29px;
 `
 
-const IconWrapper = styled.div<SkillPropsType>`
+const IconWrapper = styled.div<IconWrapperPropsType>`
     margin-top: ${props => props.marginTop || "0"};
 `
+
 const StyledSpan = styled.span`
     font-weight: 300;
     font-size: 24px;
