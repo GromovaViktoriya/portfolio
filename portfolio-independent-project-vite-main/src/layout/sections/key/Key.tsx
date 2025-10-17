@@ -9,8 +9,10 @@ export const Key = () => {
             <Container>
                 <StyledSkills>
                     <FlexWrapper wrap={"wrap"} gap={"30px"} justify={"center"}>
-                        <Skill iconId={"product-design"} width={"150px"} height={"150px"} viewBox={"0 0 150 150"} text={"Product Design"}/>
-                        <Skill iconId={"ux-ui-design"} width={"143px"} height={"48px"} viewBox={"0 0 143 48"} text={"UX/UI Design"}/>
+                        <Skill iconId={"product-design"} width={"100px"} height={"80px"} viewBox={"0 0 100 80"}
+                               text={"Product Design"}/>
+                        <Skill iconId={"ux-ui-design"} width={"143px"} height={"48px"} viewBox={"0 0 143 48"}
+                               text={"UX/UI Design"} marginTop={"27px"}/>
                         <Skill iconId={"icon-design"} text={"Icon Design"}/>
                         <Skill iconId={"logo-design"} text={"Logo Design"}/>
                         <Skill iconId={"backend"} text={"Backend"}/>

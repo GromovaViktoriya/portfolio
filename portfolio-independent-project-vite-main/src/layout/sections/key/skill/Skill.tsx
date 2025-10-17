@@ -8,11 +8,12 @@ type SkillPropsType = {
     width?: string,
     height?: string,
     viewBox?: string,
+    marginTop?: string,
 }
 export const Skill = (props:SkillPropsType) => {
     return (
         <StyledSkill>
-            <IconWrapper>
+            <IconWrapper marginTop={props.marginTop}>
                 <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox}/>
             </IconWrapper>
             <StyledSpan>{props.text}</StyledSpan>
@@ -24,7 +25,7 @@ const StyledSkill = styled.div`
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     width: 270px;
@@ -34,8 +35,8 @@ const StyledSkill = styled.div`
     border-radius: 29px;
 `
 
-const IconWrapper = styled.div`
-
+const IconWrapper = styled.div<SkillPropsType>`
+    margin-top: ${props => props.marginTop || "0"};
 `
 const StyledSpan = styled.span`
     font-weight: 300;

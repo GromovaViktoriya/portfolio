@@ -78,7 +78,11 @@ const ImageWrapper = styled.div`
     position: relative;
     z-index: 1;
     margin-right: 33px;
-    
+
+    img {
+        height: 100%;
+    }
+
     ${TextIconWrapper}.ui {
         top: 99px;
         right: 112px;
