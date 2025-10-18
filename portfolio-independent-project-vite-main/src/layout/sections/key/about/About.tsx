@@ -3,10 +3,20 @@ import Img2 from "../../../../assets/images/main-image3.png";
 import Img3 from "../../../../assets/images/main-image2.png";
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme.ts";
+import {Icon} from "../../../../components/icon/Icon.tsx";
 
 export const About = () => {
     return (
         <StyledAbout>
+            <IconWrapper>
+                <Icon iconId={"big-circle"} width={"932px"} height={"932px"} viewBox={"0 0 932px 932px"}/>
+            </IconWrapper>
+            <IconWrapper>
+                <Icon iconId={"middle-circle"} width={"626px"} height={"626px"} viewBox={"0 0 626px 626px"}/>
+            </IconWrapper>
+            <IconWrapper>
+                <Icon iconId={"mini-circle"} width={"496px"} height={"496px"} viewBox={"0 0 496px 496px"}/>
+            </IconWrapper>
             <ImageWrapper1>
                 <img src={Img1} alt="Portrait1"/>
             </ImageWrapper1>
@@ -35,14 +45,46 @@ export const About = () => {
     )
 }
 
+const IconWrapper = styled.div`
+    position: absolute;
+    z-index: 0;
+
+
+    &::before {
+        content: "";
+        display: inline-block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+`
+
 const StyledAbout = styled.div`
     display: grid;
-    grid-template-columns: 1fr 496px 1fr;
+    grid-template-columns: auto 496px auto;
     grid-template-rows: repeat(3, auto);
 
     position: relative;
+    left: 100px;
 
+    ${IconWrapper}:nth-child(1) {
+        left: -185px;
+        bottom: -75px;
+    }
+
+    ${IconWrapper}:nth-child(2) {
+        right: 0;
+        bottom: -190px;
+    }
+
+    ${IconWrapper}:nth-child(3) {
+        right: 0;
+        top: -95px;
+    }
 `;
+
 const StyledSpan = styled.span`
     font-family: "NEXT ART", sans-serif;
     font-weight: 400;
@@ -51,7 +93,7 @@ const StyledSpan = styled.span`
 `;
 
 const StyledText = styled.p`
-    width: 496px;
+    max-width: 496px;
     padding: 63px;
     font-weight: 300;
     font-size: 20px;
@@ -86,8 +128,8 @@ const StyledText = styled.p`
 `;
 
 const ImageWrapper1 = styled.div`
-    width: 330px;
-    height: 378px;
+    max-width: 330px;
+    max-height: 378px;
     padding: 29px;
 
     grid-column: 1/2;
@@ -96,7 +138,7 @@ const ImageWrapper1 = styled.div`
     top: -47px;
     left: 41px;
     z-index: 1;
-    
+
     img {
         width: 100%;
         outline: 6px solid #686868
@@ -114,13 +156,11 @@ const ImageWrapper1 = styled.div`
         position: absolute;
         z-index: -1;
     }
-
-    
 `;
 
 const ImageWrapper2 = styled.div`
-    width: 307px;
-    height: 339px;
+    max-width: 307px;
+    max-height: 339px;
     padding: 29px;
     
     grid-column: 1/2;
@@ -151,8 +191,8 @@ const ImageWrapper2 = styled.div`
 `;
 
 const ImageWrapper3 = styled.div`
-    width: 345px;
-    height: 485px;
+    max-width: 345px;
+    max-height: 485px;
     padding: 29px;
 
     grid-column: 3/4;
@@ -181,3 +221,5 @@ const ImageWrapper3 = styled.div`
         z-index: -1;
     }
 `;
+
+
