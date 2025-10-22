@@ -140,7 +140,6 @@ const ImageWrapper1 = styled.div`
     z-index: 1;
 
     img {
-        width: 100%;
         outline: 6px solid #686868
     }
 
@@ -172,7 +171,6 @@ const ImageWrapper2 = styled.div`
     z-index: 1;
 
     img {
-        width: 100%;
         outline: 6px solid #686868;
     }
     
@@ -204,7 +202,6 @@ const ImageWrapper3 = styled.div`
     z-index: 0;
     
     img {
-        width: 100%;
         outline: 6px solid #686868
     }
     
