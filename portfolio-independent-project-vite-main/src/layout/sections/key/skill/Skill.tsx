@@ -46,6 +46,7 @@ const IconWrapper = styled.div<IconWrapperPropsType>`
 
 const StyledSpan = styled.span`
     font-weight: 300;
-    font-size: 24px;
+    // font-size: calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);
+    font-size:  calc( (min(100vw, 1920px) - 375px)/(1920 - 375) * (24 - 18) + 18px);
     color: ${theme.colors.font};
 `
