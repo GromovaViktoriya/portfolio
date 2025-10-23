@@ -2,11 +2,9 @@ import styled, {css} from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Button} from "../../../components/Button.tsx";
 import {Container} from "../../../components/Container.tsx";
-import {Header} from "../../header/Header.tsx";
 import AboutImg from "../../../assets/images/about-image.png";
 import {TextIcon} from "../../../components/textIcon/TextIcon.tsx";
 import {Icon} from "../../../components/icon/Icon.tsx";
-import {theme} from "../../../styles/Theme.ts";
 
 type TextIconPropsType = {
     iconId: string,
@@ -14,8 +12,6 @@ type TextIconPropsType = {
 
 export const Main = () => {
     return (
-        <StyledWrapper>
-            <Header/>
             <StyledAbout>
                 <Container>
                     <FlexWrapper className={"flexAboutWrapper"} justify={"space-between"}>
@@ -51,13 +47,9 @@ export const Main = () => {
                     </FlexWrapper>
                 </Container>
             </StyledAbout>
-        </StyledWrapper>
     )
 }
 
-const StyledWrapper = styled.div`
-    background-image: ${theme.colors.primaryBG};
-`
 
 const StyledAbout = styled.section`
     ${FlexWrapper}.aboutTextWrapper {
@@ -122,6 +114,7 @@ const ImageWrapper = styled.div`
 
     @media (max-width: 1100px){
         margin-right: 0;
+        margin-left: 50px;
     }
 
     img {

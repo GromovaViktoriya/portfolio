@@ -55,6 +55,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${theme.colors.font};
         line-height: 1.2;
         overflow-x: clip;
+        background-image: ${theme.colors.primaryBG};
     }
 
     a {
