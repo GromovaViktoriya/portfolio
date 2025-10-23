@@ -70,7 +70,7 @@ const StyledAbout = styled.div`
     left: 100px;
 
     ${IconWrapper}:nth-child(1) {
-        left: -185px;
+        left: -227px;
         bottom: -75px;
     }
 

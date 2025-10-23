@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Button} from "../../../components/Button.tsx";
 import {Container} from "../../../components/Container.tsx";
@@ -6,6 +6,10 @@ import {Header} from "../../header/Header.tsx";
 import AboutImg from "../../../assets/images/about-image.png";
 import {TextIcon} from "../../../components/textIcon/TextIcon.tsx";
 import {Icon} from "../../../components/icon/Icon.tsx";
+
+type TextIconPropsType = {
+    iconId: string,
+}
 
 export const Main = () => {
     return (
@@ -28,16 +32,16 @@ export const Main = () => {
                             <IconWrapper>
                                 <Icon iconId={"main-circle"} width={"879px"} height={"880px"} viewBox={"0 0 879 880"}/>
                             </IconWrapper>
-                            <TextIconWrapper className={"ui"}>
+                            <TextIconWrapper iconId={"ui"}>
                                 <TextIcon iconText={"UI"}/>
                             </TextIconWrapper>
-                            <TextIconWrapper className={"tag"}>
+                            <TextIconWrapper iconId={"tag"}>
                                 <TextIcon iconText={"</"}/>
                             </TextIconWrapper>
-                            <TextIconWrapper className={"ux"}>
+                            <TextIconWrapper iconId={"ux"}>
                                 <TextIcon iconText={"Ux"}/>
                             </TextIconWrapper>
-                            <TextIconWrapper className={"ps"}>
+                            <TextIconWrapper iconId={"ps"}>
                                 <TextIcon iconText={"Ps"}/>
                             </TextIconWrapper>
                         </ImageWrapper>
@@ -57,23 +61,44 @@ const StyledAbout = styled.section`
 const StyledSpan = styled.span`
     font-weight: 600;
     // font-size: calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);
-    font-size:  calc( (min(100vw, 1920px) - 375px)/(1920 - 375) * (48 - 27) + 27px);
+    font-size: calc((min(100vw, 1920px) - 375px) / (1920 - 375) * (48 - 27) + 27px);
     line-height: 1;
 `
 
 const StyledTitle = styled.h1`
     font-weight: 700;
     // font-size: calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);
-    font-size:  calc( (min(100vw, 1920px) - 375px)/(1920 - 375) * (72 - 52) + 52px);
+    font-size: calc((min(100vw, 1920px) - 375px) / (1920 - 375) * (72 - 52) + 52px);
     line-height: 1;
 `
 
 const StyledText = styled.p`
 
 `
-const TextIconWrapper = styled.div`
+const TextIconWrapper = styled.div<TextIconPropsType>`
     position: absolute;
     z-index: 0;
+
+    ${props => props.iconId === "ui" && css<TextIconPropsType>`
+        top: 99px;
+        right: 112px;
+    `}
+    
+    ${props => props.iconId === "tag" && css<TextIconPropsType>`
+        top: 131px;
+        left: -45px;
+    `}
+    
+    ${props => props.iconId === "ux" && css<TextIconPropsType>`
+        top: 297px;
+        left: -121px;
+    `}
+    
+    ${props => props.iconId === "ps" && css<TextIconPropsType>`
+        bottom: 205px;
+        left: -90px;
+    `}
+    
 `
 
 const ImageWrapper = styled.div`
@@ -84,26 +109,7 @@ const ImageWrapper = styled.div`
     img {
         height: 100%;
     }
-
-    ${TextIconWrapper}.ui {
-        top: 99px;
-        right: 112px;
-    }
-
-    ${TextIconWrapper}.tag {
-        top: 131px;
-        left: -45px;
-    }
-
-    ${TextIconWrapper}.ux {
-        top: 297px;
-        left: -121px;
-    }
-
-    ${TextIconWrapper}.ps {
-        bottom: 205px;
-        left: -90px;
-    }
+    
 `
 
 const IconWrapper = styled.div`

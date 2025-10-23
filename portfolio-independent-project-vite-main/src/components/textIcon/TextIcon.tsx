@@ -8,7 +8,7 @@ type IconPropsType = {
 export const TextIcon = (props: IconPropsType) => {
     return (
         <StyledTextIcon>
-            <StyledSpan>{props.iconText}</StyledSpan>
+           {props.iconText}
         </StyledTextIcon>
     )
 }
@@ -22,9 +22,7 @@ const StyledTextIcon = styled.div`
     justify-content: center;
     align-items: center;
     position: absolute;
-`
 
-const StyledSpan = styled.span`
     font-family: "NEXT ART", sans-serif;
     font-weight: 700;
     font-size: 36px;
