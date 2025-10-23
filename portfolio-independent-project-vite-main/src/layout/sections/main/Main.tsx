@@ -6,6 +6,7 @@ import {Header} from "../../header/Header.tsx";
 import AboutImg from "../../../assets/images/about-image.png";
 import {TextIcon} from "../../../components/textIcon/TextIcon.tsx";
 import {Icon} from "../../../components/icon/Icon.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 type TextIconPropsType = {
     iconId: string,
@@ -13,48 +14,61 @@ type TextIconPropsType = {
 
 export const Main = () => {
     return (
-        <StyledAbout>
+        <StyledWrapper>
             <Header/>
-            <Container>
-                <FlexWrapper justify={"space-between"}>
-                    <FlexWrapper className={"aboutTextWrapper"} direction={"column"} gap={"27px"}>
-                        <StyledSpan>Hello</StyledSpan>
-                        <StyledTitle>I’m Gleb Kostrubov</StyledTitle>
-                        <StyledText>
-                            I've been doing web design, front-end and back-end development for a year now. Do you need a
-                            website design, site layout, or maybe a turnkey website? Then contact me
-                        </StyledText>
-                        <Button>Contact me</Button>
+            <StyledAbout>
+                <Container>
+                    <FlexWrapper className={"flexAboutWrapper"} justify={"space-between"}>
+                        <FlexWrapper className={"aboutTextWrapper"} direction={"column"} gap={"27px"}>
+                            <StyledSpan>Hello</StyledSpan>
+                            <StyledTitle>I’m Gleb Kostrubov</StyledTitle>
+                            <StyledText>
+                                I've been doing web design, front-end and back-end development for a year now. Do you need a
+                                website design, site layout, or maybe a turnkey website? Then contact me
+                            </StyledText>
+                            <Button>Contact me</Button>
+                        </FlexWrapper>
+                        <FlexWrapper>
+                            <ImageWrapper>
+                                <img src={AboutImg} alt="Main portrait"/>
+                                <IconWrapper>
+                                    <Icon iconId={"main-circle"} width={"879px"} height={"880px"} viewBox={"0 0 879 880"}/>
+                                </IconWrapper>
+                                <TextIconWrapper iconId={"ui"}>
+                                    <TextIcon iconText={"UI"}/>
+                                </TextIconWrapper>
+                                <TextIconWrapper iconId={"tag"}>
+                                    <TextIcon iconText={"</"}/>
+                                </TextIconWrapper>
+                                <TextIconWrapper iconId={"ux"}>
+                                    <TextIcon iconText={"Ux"}/>
+                                </TextIconWrapper>
+                                <TextIconWrapper iconId={"ps"}>
+                                    <TextIcon iconText={"Ps"}/>
+                                </TextIconWrapper>
+                            </ImageWrapper>
+                        </FlexWrapper>
                     </FlexWrapper>
-                    <FlexWrapper>
-                        <ImageWrapper>
-                            <img src={AboutImg} alt="Main portrait"/>
-                            <IconWrapper>
-                                <Icon iconId={"main-circle"} width={"879px"} height={"880px"} viewBox={"0 0 879 880"}/>
-                            </IconWrapper>
-                            <TextIconWrapper iconId={"ui"}>
-                                <TextIcon iconText={"UI"}/>
-                            </TextIconWrapper>
-                            <TextIconWrapper iconId={"tag"}>
-                                <TextIcon iconText={"</"}/>
-                            </TextIconWrapper>
-                            <TextIconWrapper iconId={"ux"}>
-                                <TextIcon iconText={"Ux"}/>
-                            </TextIconWrapper>
-                            <TextIconWrapper iconId={"ps"}>
-                                <TextIcon iconText={"Ps"}/>
-                            </TextIconWrapper>
-                        </ImageWrapper>
-                    </FlexWrapper>
-                </FlexWrapper>
-            </Container>
-        </StyledAbout>
+                </Container>
+            </StyledAbout>
+        </StyledWrapper>
     )
 }
+
+const StyledWrapper = styled.div`
+    background-image: ${theme.colors.primaryBG};
+`
 
 const StyledAbout = styled.section`
     ${FlexWrapper}.aboutTextWrapper {
         width: 447px;
+    }
+    
+    @media (max-width: 1100px) {
+        ${FlexWrapper}.flexAboutWrapper {
+            flex-direction: column;
+            align-items: center;  
+        }
     }
 
 `
@@ -106,8 +120,18 @@ const ImageWrapper = styled.div`
     z-index: 1;
     margin-right: 33px;
 
+    @media (max-width: 1100px){
+        margin-right: 0;
+    }
+
     img {
         height: 100%;
+    }
+
+    @media screen and (max-width: 768px){
+        transform: scale(0.8);
+        transform-origin: bottom;
+        margin-top: -115px;
     }
     
 `

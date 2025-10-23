@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Skill} from "./skill/Skill.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {About} from "./about/About.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 
 export const Key = () => {
@@ -30,7 +31,11 @@ export const Key = () => {
 
 const StyledKey = styled.section`
     padding: 113px 0 159px;
-
+    background-image: ${theme.colors.secondaryBG};
+    
+    @media (max-width: 900px) {
+        padding-bottom: 434px; 
+    }
 `;
 
 const StyledSkills = styled.div`

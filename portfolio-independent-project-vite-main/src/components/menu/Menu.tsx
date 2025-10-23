@@ -22,6 +22,10 @@ const StyledMenu = styled.nav`
 const StyledUl = styled.ul`
     display: flex;
     gap: 145px;
+
+    @media (max-width: 1100px){
+        gap: 65px;
+    }
 `
 
 const ListItem = styled.li`
