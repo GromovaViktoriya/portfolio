@@ -54,6 +54,11 @@ const StyledSlide = styled.div`
         grid-template-rows: auto auto;
         justify-items: center;
     }
+
+    @media screen and (max-width: 768px) {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
 `
 
 const ImageWrapper = styled.div`

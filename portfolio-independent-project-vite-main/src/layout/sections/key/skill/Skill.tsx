@@ -43,12 +43,22 @@ const StyledSkill = styled.div`
         width: 220px;
         height: 220px;
         padding: 30px;
-        gap: 15px;
+    }
+    
+    @media (max-width: 576px) {
+        width: 160px;
+        height: 160px;
+        padding: 20px;
     }
 `
 
 const IconWrapper = styled.div<IconWrapperPropsType>`
     margin-top: ${props => props.marginTop || "0"};
+
+    @media (max-width: 576px) {
+       transform: scale(0.6);
+        transform-origin: center;
+    }
 `
 
 const StyledSpan = styled.span`
@@ -56,4 +66,7 @@ const StyledSpan = styled.span`
     // font-size: calc( (100vw - Vmin)/(Vmax - Vmin) * (Fmax - Fmin) + Fmin);
     font-size:  calc( (min(100vw, 1920px) - 375px)/(1920 - 375) * (24 - 18) + 18px);
     color: ${theme.colors.font};
+    @media (max-width: 576px) {
+       white-space: nowrap;
+    }
 `

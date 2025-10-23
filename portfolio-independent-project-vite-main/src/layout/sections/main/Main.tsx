@@ -54,12 +54,19 @@ export const Main = () => {
 const StyledAbout = styled.section`
     ${FlexWrapper}.aboutTextWrapper {
         width: 447px;
+        
     }
     
     @media (max-width: 1100px) {
         ${FlexWrapper}.flexAboutWrapper {
             flex-direction: column;
             align-items: center;  
+        }
+    }
+
+    @media screen and (max-width: 576px){
+        ${FlexWrapper}.aboutTextWrapper {
+            width: 345px;
         }
     }
 
@@ -125,6 +132,12 @@ const ImageWrapper = styled.div`
         transform: scale(0.8);
         transform-origin: bottom;
         margin-top: -115px;
+    }
+    
+    @media screen and (max-width: 576px){
+        transform: scale(0.59);
+        margin-top: -270px;
+        margin-left: 40px;
     }
     
 `

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../FlexWrapper.tsx";
 import {Icon} from "../icon/Icon.tsx";
 import {Slide} from "./Slide/Slide.tsx";
 
@@ -10,7 +9,7 @@ import {theme} from "../../styles/Theme.ts";
 export const Slider = () => {
     return (
         <StyledSlider>
-            <FlexWrapper gap={"40px"} align={"center"} justify={"space-between"}>
+            <GridWrapper>
                 <ArrowWrapper>
                     <Icon iconId={"arrow-left"} width={"36px"} height={"36px"} viewBox={"0 0 36 36"}/>
                 </ArrowWrapper>
@@ -21,11 +20,26 @@ export const Slider = () => {
                 <ArrowWrapper>
                     <Icon iconId={"arrow-right"} width={"36px"} height={"36px"} viewBox={"0 0 36 36"}/>
                 </ArrowWrapper>
-            </FlexWrapper>
+            </GridWrapper>
         </StyledSlider>
     )
 }
 
+export const GridWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 40px;
+    
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 81px;
+        row-gap: 62px;
+       
+    }
+`
 
 export const ArrowWrapper = styled.div`
     width: 36px;
@@ -54,9 +68,21 @@ export const ArrowWrapper = styled.div`
 const StyledSlider = styled.div`
     ${ArrowWrapper}:first-child {
         margin-left: 12px;
+        
+        @media screen and (max-width: 768px) {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            justify-self: flex-end;
+        }
     }
 
     ${ArrowWrapper}:last-child {
         margin-right: 12px;
+
+        @media screen and (max-width: 768px) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            justify-self: flex-start;
+        }
     }
 `

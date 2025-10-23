@@ -167,12 +167,23 @@ const StyledAbout = styled.div`
             top: 765px;
         }
     }
-    
+
     @media screen and (max-width: 768px) {
         ${IconWrapper}:nth-child(3) {
             right: 20px;
         }
-        
+    }
+
+    @media screen and (max-width: 660px) {
+        ${IconWrapper}:nth-child(3) {
+            right: -35px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        ${IconWrapper}:nth-child(3) {
+            right: -70px;
+        }
     }
 
 `;
@@ -211,6 +222,10 @@ const StyledText = styled.p`
     @media screen and (max-width: 900px){
         grid-column: 1/2;
         grid-row: 1/3;
+    }
+    
+    @media screen and (max-width: 576px){
+        padding: 63px 15px;
     }
 `;
 
