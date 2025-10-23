@@ -54,7 +54,7 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.colors.font};
         line-height: 1.2;
-        //overflow-x: clip;
+        overflow-x: clip;
     }
 
     a {
@@ -74,14 +74,6 @@ export const GlobalStyle = createGlobalStyle`
         color: #000;
     }
     
-
-    section:nth-of-type(odd) {
-        background-image: ${theme.colors.primaryBG};
-    }
-
-    section:nth-of-type(even) {
-        background-image: ${theme.colors.secondaryBG};
-    }
 
     h1, h2, h3  {
         font-family: "NEXT ART", sans-serif;

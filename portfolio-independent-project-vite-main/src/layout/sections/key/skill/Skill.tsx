@@ -38,6 +38,13 @@ const StyledSkill = styled.div`
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.47);
     background: #2a2a2a;
     border-radius: 29px;
+    
+    @media (max-width: 768px) {
+        width: 220px;
+        height: 220px;
+        padding: 30px;
+        gap: 15px;
+    }
 `
 
 const IconWrapper = styled.div<IconWrapperPropsType>`

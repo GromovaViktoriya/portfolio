@@ -21,15 +21,13 @@ export const Footer = () => {
                         <StyledSpan>Inst: notitanic33</StyledSpan>
                         <StyledSpan>Calls: +7 (900) - 121 - 54 -54</StyledSpan>
                     </FlexWrapper>
-                    <FlexWrapper direction={"column"} align={"center"} gap={"57px"}>
-                        <FlexWrapper gap={"32px"} align={"center"} justify={"center"}>
-                            <Logo/>
-                            <ArrowWrapper>
-                                <Icon iconId={"arrow-up"} width={"36px"} height={"36px"} viewBox={"0 0 36 36"}/>
-                            </ArrowWrapper>
-                        </FlexWrapper>
+                    <GridWrapper>
+                        <Logo/>
+                        <ArrowWrapper>
+                            <Icon iconId={"arrow-up"} width={"36px"} height={"36px"} viewBox={"0 0 36 36"}/>
+                        </ArrowWrapper>
                         <StyledSmall>Copyright © 2021, Notitanic</StyledSmall>
-                    </FlexWrapper>
+                    </GridWrapper>
                 </FooterWrapper>
             </Container>
         </StyledFooter>
@@ -56,6 +54,27 @@ const FooterWrapper = styled.div`
     gap: 56px;
     grid-template-columns: 144px 244px 273px;
     grid-template-rows: repeat(1, 1fr);
+
+    @media screen and (max-width: 830px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 60px;
+    }
+    
+`
+const GridWrapper = styled.div`
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows:  1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 57px;
+    
+    @media screen and (max-width: 830px) {
+        div:nth-child(2) {
+            justify-self: flex-end;
+        }
+    }
 `
 
 const StyledSpan = styled.span`
@@ -68,4 +87,5 @@ const StyledSmall = styled.small`
     font-weight: 300;
     font-size: 18px;
     ${theme.colors.font};
+    grid-column: 1/3;
 `

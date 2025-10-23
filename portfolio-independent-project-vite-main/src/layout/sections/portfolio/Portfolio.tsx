@@ -16,6 +16,8 @@ export const Portfolio = () => {
 }
 
 const StyledPortfolio = styled.section`
+    background-image: ${theme.colors.primaryBG};
+    
     .portfolio {
         padding: 97px 15px 150px;
         display: flex;

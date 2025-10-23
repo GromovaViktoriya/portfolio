@@ -16,6 +16,10 @@ const StyledLogo = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
+    
+    @media screen and (max-width: 830px) {
+        justify-self: flex-start;
+    }
 `
 
 const StyledLogoSpan = styled.span`
