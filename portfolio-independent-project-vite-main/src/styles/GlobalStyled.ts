@@ -54,11 +54,15 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.colors.font};
         line-height: 1.2;
-        overflow-x: clip;
         background-image: ${theme.colors.primaryBG};
         min-width: 375px;
     }
 
+    html, body {
+        overflow-x: clip;
+    }
+    
+    
     a {
         text-decoration: none;
         color: ${theme.colors.font};
