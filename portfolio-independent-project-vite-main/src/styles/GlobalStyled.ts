@@ -56,6 +56,7 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
         overflow-x: clip;
         background-image: ${theme.colors.primaryBG};
+        min-width: 375px;
     }
 
     a {

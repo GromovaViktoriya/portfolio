@@ -59,6 +59,10 @@ const StyledSlide = styled.div`
         grid-column: 1/3;
         grid-row: 1/2;
     }
+    
+    @media screen and (max-width: 576px) {
+        padding: 30px 25px;
+    }
 `
 
 const ImageWrapper = styled.div`

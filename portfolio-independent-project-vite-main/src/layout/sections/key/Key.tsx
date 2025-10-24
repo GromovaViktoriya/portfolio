@@ -32,14 +32,25 @@ export const Key = () => {
 const StyledKey = styled.section`
     padding: 113px 0 159px;
     background-image: ${theme.colors.secondaryBG};
-    
+
     @media (max-width: 900px) {
-        padding-bottom: 434px; 
+        padding-bottom: 434px;
+    }
+    
+    @media (max-width: 768px) {
+        padding-top: 90px;
     }
 `;
 
 const StyledSkills = styled.div`
     margin-bottom: 186px;
 
+    div:nth-child(1) {
+        gap: 25px;
+    }
+    
+    @media (max-width: 768px) {
+        margin-bottom: 107px;
+    }
 `;
 

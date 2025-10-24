@@ -31,4 +31,10 @@ const StyledPortfolio = styled.section`
         color: ${theme.colors.secondaryFont};
         margin-bottom: 50px;
     }
+    
+    @media (max-width: 768px) {
+        .portfolio{
+            padding: 97px 15px 95px;
+        }
+    }
 `
