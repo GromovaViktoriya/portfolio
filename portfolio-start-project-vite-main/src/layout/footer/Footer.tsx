@@ -3,6 +3,7 @@ import {Icon} from "../../components/icon/Icon.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
 import {theme} from "../../styles/Theme.ts";
+import {font} from "../../styles/Common.ts";
 
 export const Footer = () => {
     return (
@@ -45,9 +46,7 @@ const StyledFooter = styled.footer`
 
 `
 const Name = styled.span`
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 700;
-    font-size: 22px;
+    ${font({family:"'Josefin Sans', sans-serif", weight: 700, Fmax: 22, Fmin: 16})}
     letter-spacing: 3px;
 `
 const SocialList = styled.ul`
@@ -68,8 +67,9 @@ const SocialLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: ${theme.colors.accent};
+
     &:hover {
         color: ${theme.colors.primaryBG};
         background-color: ${theme.colors.accent};
