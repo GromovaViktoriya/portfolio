@@ -76,7 +76,6 @@ export const GlobalStyle = createGlobalStyle`
         color: #000;
     }
     
-
     h1, h2, h3  {
         font-family: "NEXT ART", sans-serif;
         color: ${theme.colors.font};
@@ -87,5 +86,4 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 18px;
         color: ${theme.colors.font};
     }
-
 `

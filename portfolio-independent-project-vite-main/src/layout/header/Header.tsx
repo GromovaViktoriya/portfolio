@@ -24,9 +24,9 @@ export const Header = () => {
 const StyledHeader = styled.header`
     padding: 26px 0;
     margin-bottom: 13px;
-    
-    nav:first-of-type{
-        @media screen and (max-width: 768px){
+
+    nav:first-of-type {
+        @media screen and (max-width: 768px) {
             display: none;
         }
     }
