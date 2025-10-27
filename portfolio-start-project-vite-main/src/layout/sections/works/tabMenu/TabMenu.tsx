@@ -1,4 +1,4 @@
-import {Link} from "../../../../components/Link.tsx";
+import {Link} from "../../../../components/Link.ts";
 import {S} from "../Works_Styles.ts";
 import React from "react";
 

@@ -1,9 +1,9 @@
-import {SectionTitle} from "../../../components/SectionTitle.tsx";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {SectionTitle} from "../../../components/SectionTitle.ts";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Work} from "./work/Work.tsx";
 import socialImg from '../../../assets/images/proj-1.webp'
 import timerImg from '../../../assets/images/proj-2.webp'
-import {Container} from "../../../components/Container.tsx";
+import {Container} from "../../../components/Container.ts";
 import {TabMenu} from "./tabMenu/TabMenu.tsx";
 import { S } from "./Works_Styles.ts";
 import React from "react";
