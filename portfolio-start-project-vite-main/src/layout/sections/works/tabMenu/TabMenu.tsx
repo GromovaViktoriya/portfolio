@@ -1,8 +1,9 @@
 import {Link} from "../../../../components/Link.tsx";
-import { S } from "../Works_Styles.ts";
+import {S} from "../Works_Styles.ts";
+import React from "react";
 
 
-export const TabMenu = (props: { menuItems: Array<string> }) => {
+export const TabMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
     return (
         <S.TabMenu>
             <ul>
