@@ -32,6 +32,7 @@ export const Footer: React.FC = () => {
                 <FlexWrapper direction={"column"} align={"center"}>
                     <S.Name>Svetlana</S.Name>
                     <S.SocialList>
+
                         {SocialItemsData.map((s, index) => {
                             return <S.SocialItem key={index}>
                                 <S.SocialLink href={s.href}>
@@ -39,6 +40,7 @@ export const Footer: React.FC = () => {
                                 </S.SocialLink>
                             </S.SocialItem>
                         })}
+
                     </S.SocialList>
                     <S.Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</S.Copyright>
                 </FlexWrapper>
