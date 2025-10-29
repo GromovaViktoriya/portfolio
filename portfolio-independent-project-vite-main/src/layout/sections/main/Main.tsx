@@ -54,20 +54,26 @@ export const Main = () => {
 const StyledAbout = styled.section`
     ${FlexWrapper}.aboutTextWrapper {
         width: 447px;
-        
+        align-self: center;
     }
     
     @media (max-width: 1100px) {
         ${FlexWrapper}.flexAboutWrapper {
             flex-direction: column;
             align-items: center;  
+            padding-top: 40px;
         }
     }
 
-    @media screen and (max-width: 576px){
+    @media (max-width: 576px){
+        ${FlexWrapper}.flexAboutWrapper {
+            padding-top: 0;
+        }
+        
         ${FlexWrapper}.aboutTextWrapper {
             width: 345px;
         }
+        
     }
 
 `
