@@ -1,16 +1,18 @@
 import {Menu} from "../menu/Menu.tsx";
-import React from "react";
+import React, {useState} from "react";
 import {S} from "../HeaderMenu_styles.ts";
 
 
 export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const onBurgerBtnClick = () => {setMenuIsOpen(!menuIsOpen)}
     return (
         <S.MobileMenu>
-            <S.BurgerButton isOpen={false}>
+            <S.BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                 <span></span>
             </S.BurgerButton>
 
-            <S.MobileMenuPopup isOpen={false}>
+            <S.MobileMenuPopup isOpen={menuIsOpen} onClick={()=> setMenuIsOpen(false)}>
                 <Menu menuItems={props.menuItems}/>
             </S.MobileMenuPopup>
         </S.MobileMenu>
