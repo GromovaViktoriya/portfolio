@@ -3,7 +3,9 @@ import {theme} from "../../../styles/Theme.ts";
 
 
 //skills
-const Skills = styled.section``;
+const Skills = styled.section`
+position: relative;
+`;
 
 
 //skill

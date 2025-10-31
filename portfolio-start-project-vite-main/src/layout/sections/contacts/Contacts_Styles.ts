@@ -5,7 +5,7 @@ import {theme} from "../../../styles/Theme.ts";
 
 
 const Contact = styled.section`
-
+    position: relative;
 `
 
 const Form = styled.form`
