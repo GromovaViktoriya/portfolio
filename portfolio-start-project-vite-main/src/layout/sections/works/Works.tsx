@@ -7,6 +7,7 @@ import {Container} from "../../../components/Container.ts";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu.tsx";
 import {S} from "./Works_Styles.ts";
 import React, {useState} from "react";
+import {AnimatePresence, motion} from "framer-motion";
 
 // const tabsItems = ["All", "Landing Page", "React", "Spa"]
 
@@ -35,13 +36,44 @@ const workData = [
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         src: socialImg,
         type: "spa",
+        id: 1
     },
     {
         title: "Timer",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
         src: timerImg,
-        type: "react"
-    }]
+        type: "react",
+        id: 2
+    },
+    {
+        title: "Social Network",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src: socialImg,
+        type: "spa",
+        id: 3
+    },
+    {
+        title: "Timer",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+        src: timerImg,
+        type: "react",
+        id: 4
+    },
+    {
+        title: "Social Network",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src: socialImg,
+        type: "spa",
+        id: 5
+    },
+    {
+        title: "Timer",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
+        src: timerImg,
+        type: "react",
+        id: 6
+    },
+]
 
 export const Works: React.FC = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState("all");
@@ -69,11 +101,25 @@ export const Works: React.FC = () => {
                          changeFilterStatus={changeFilterStatus}
                          currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
-                    {filteredWorks.map((w) => {
-                        return <Work title={w.title}
-                                     description={w.description}
-                                     src={w.src}/>
-                    })}
+                    <AnimatePresence>
+                        {filteredWorks.map((w) => {
+                            return (
+                                <motion.div style={{ width: "400px",flexGrow: 1, maxWidth: "540px" }}
+                                    initial={{opacity: 0}}
+                                    animate={{opacity: 1}}
+                                    exit={{opacity: 0}}
+                                    key={w.id}
+                                    layout={true}
+                                >
+                                    <Work title={w.title}
+                                          description={w.description}
+                                          src={w.src}
+                                          key={w.id}
+                                    />
+                                </motion.div>
+                            )
+                        })}
+                    </AnimatePresence>
                 </FlexWrapper>
             </Container>
         </S.Works>
