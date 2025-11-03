@@ -1,15 +1,18 @@
 import styled, {css} from "styled-components";
 import {Link} from "../../../components/Link.tsx";
 import {theme} from "../../../styles/Theme.ts";
+import React, {useState} from "react";
 
 
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const onBurgerBtnClick = () => {setMenuIsOpen(!menuIsOpen)}
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={false}>
+            <BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                 <span></span>
             </BurgerButton>
-            <MobileMenuPopup isOpen={false}>
+            <MobileMenuPopup isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
             <ul>
                 {props.menuItems.map((item, index) => {
                     return <ListItem key={index}>
