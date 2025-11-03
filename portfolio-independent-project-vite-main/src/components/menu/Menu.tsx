@@ -75,6 +75,7 @@ const NavLink = styled(Link)`
         left: 0;
         right: 0;
         z-index: -1;
+        transition: 0.2s ease-in-out;
     }
 `
 
