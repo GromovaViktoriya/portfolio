@@ -28,4 +28,24 @@ const StyledTextIcon = styled.div`
     font-size: 36px;
     color: ${theme.colors.accent};
     text-transform: uppercase;
+
+    &:before {
+        content: '';
+        background: linear-gradient(45deg, #ffffff, #00c4f0, #b2f0ff);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(4px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        border-radius: 100%;
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+    }
+    &:hover:before {
+        opacity: 1;
+    }
 `
