@@ -7,7 +7,7 @@ import {Icon} from "../../../../components/icon/Icon.tsx";
 
 export const About = () => {
     return (
-        <StyledAbout>
+        <StyledAbout  id={"about"} >
             <IconWrapper>
                 <Icon iconId={"big-circle"} width={"932px"} height={"932px"} viewBox={"0 0 932px 932px"}/>
             </IconWrapper>

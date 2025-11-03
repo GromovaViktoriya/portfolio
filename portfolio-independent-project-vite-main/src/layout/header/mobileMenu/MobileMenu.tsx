@@ -1,10 +1,10 @@
 import styled, {css} from "styled-components";
-import {Link} from "../../../components/Link.tsx";
 import {theme} from "../../../styles/Theme.ts";
-import React, {useState} from "react";
+import {Menu} from "../../../components/menu/Menu.tsx";
+import {useState} from "react";
 
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     const onBurgerBtnClick = () => {setMenuIsOpen(!menuIsOpen)}
     return (
@@ -13,13 +13,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                 <span></span>
             </BurgerButton>
             <MobileMenuPopup isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
-            <ul>
-                {props.menuItems.map((item, index) => {
-                    return <ListItem key={index}>
-                        <Link href="">{item}</Link>
-                    </ListItem>
-                })}
-            </ul>
+                <Menu/>
             </MobileMenuPopup>
         </StyledMobileMenu>
     )
@@ -107,8 +101,4 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
             `}
         }
     }
-`
-
-const ListItem = styled.li`
-
 `

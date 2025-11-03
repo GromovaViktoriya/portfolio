@@ -6,7 +6,7 @@ import {theme} from "../../../styles/Theme.ts";
 
 export const Portfolio = () => {
     return (
-        <StyledPortfolio>
+        <StyledPortfolio id={"portfolio"}>
             <Container className={"portfolio"}>
                 <Title text={"Portfolio"}/>
                 <Slider/>

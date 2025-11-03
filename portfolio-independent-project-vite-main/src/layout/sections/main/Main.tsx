@@ -12,7 +12,7 @@ type TextIconPropsType = {
 
 export const Main = () => {
     return (
-            <StyledAbout>
+            <StyledAbout id={"home"}>
                 <Container>
                     <FlexWrapper className={"flexAboutWrapper"} justify={"space-between"}>
                         <FlexWrapper className={"aboutTextWrapper"} direction={"column"} gap={"27px"}>

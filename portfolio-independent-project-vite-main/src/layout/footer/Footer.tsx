@@ -7,14 +7,13 @@ import {Logo} from "../../components/logo/Logo.tsx";
 import {Icon} from "../../components/icon/Icon.tsx";
 import {ArrowWrapper} from "../../components/slider/Slider.tsx";
 
-const menuItems = ["Home", "About me", "Portfolio", "Contact"]
 
 export const Footer = () => {
     return (
-        <StyledFooter>
+        <StyledFooter id={"contact"}>
             <Container>
                 <FooterWrapper>
-                    <Menu menuItems={menuItems}/>
+                    <Menu/>
                     <FlexWrapper direction={"column"} gap={"18px"}>
                         <StyledSpan>Contact:</StyledSpan>
                         <StyledSpan>Email: notitanic33@gmail.com</StyledSpan>
