@@ -82,7 +82,7 @@ export const CarouselSlider = () => {
 
 
 const StyledSlider = styled.div`
-    .carousel-provider{
+    .carousel-provider {
         display: grid;
         grid-template-columns: auto 1fr auto;
         grid-template-rows: 1fr;
@@ -90,12 +90,12 @@ const StyledSlider = styled.div`
         gap: 40px;
 
         @media screen and (max-width: 768px) {
-            grid-template-columns: repeat(2, auto);
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(2, auto);
             column-gap: 81px;
             row-gap: 62px;
         }
-        
+
         .btn-wrapper {
             width: 36px;
             height: 36px;
@@ -117,10 +117,11 @@ const StyledSlider = styled.div`
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: -1;
-            }}
+            }
+        }
     }
-    
-    
+
+
     .btn-wrapper:first-child {
         margin-left: 12px;
 
@@ -131,7 +132,7 @@ const StyledSlider = styled.div`
         }
     }
 
-        .btn-wrapper:last-child {
+    .btn-wrapper:last-child {
         margin-right: 12px;
 
         @media screen and (max-width: 768px) {
@@ -141,7 +142,7 @@ const StyledSlider = styled.div`
         }
     }
 
-    .slide .carousel__inner-slide{
+    .slide .carousel__inner-slide {
         padding: 50px;
         border-radius: 29px;
 
@@ -164,19 +165,20 @@ const StyledSlider = styled.div`
             grid-template-rows: auto auto;
             justify-items: center;
         }
-        
-    }
-    .slide {
-        @media screen and (max-width: 768px) {
-            grid-column: 1/3;
-            grid-row: 1/2;
-        }
 
         @media screen and (max-width: 576px) {
             padding: 30px 25px;
         }
+
     }
-    
+
+    .carousel__slider {
+        @media screen and (max-width: 768px) {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+    }
+
 `
 
 const ImageWrapper = styled.div`
