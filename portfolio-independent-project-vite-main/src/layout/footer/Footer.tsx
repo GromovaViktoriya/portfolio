@@ -6,7 +6,7 @@ import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Logo} from "../../components/logo/Logo.tsx";
 import {Icon} from "../../components/icon/Icon.tsx";
 import {ArrowWrapper} from "../../components/slider/Slider.tsx";
-
+import {animateScroll as scroll} from "react-scroll";
 
 export const Footer = () => {
     return (
@@ -22,7 +22,7 @@ export const Footer = () => {
                     </FlexWrapper>
                     <GridWrapper>
                         <Logo/>
-                        <ArrowWrapper>
+                        <ArrowWrapper onClick={() => {scroll.scrollToTop()}}>
                             <Icon iconId={"arrow-up"} width={"36px"} height={"36px"} viewBox={"0 0 36 36"}/>
                         </ArrowWrapper>
                         <StyledSmall>Copyright © 2021, Notitanic</StyledSmall>
@@ -59,7 +59,7 @@ const FooterWrapper = styled.div`
         grid-template-rows: repeat(3, 1fr);
         gap: 60px;
     }
-    
+
 `
 const GridWrapper = styled.div`
     display: grid;
@@ -68,7 +68,7 @@ const GridWrapper = styled.div`
     justify-items: center;
     align-items: center;
     gap: 57px;
-    
+
     @media screen and (max-width: 830px) {
         div:nth-child(2) {
             justify-self: flex-end;
