@@ -5,7 +5,6 @@ import {Container} from "../../components/Container.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Logo} from "../../components/logo/Logo.tsx";
 import {Icon} from "../../components/icon/Icon.tsx";
-import {ArrowWrapper} from "../../components/slider/Slider.tsx";
 import {animateScroll as scroll} from "react-scroll";
 
 export const Footer = () => {
@@ -32,6 +31,30 @@ export const Footer = () => {
         </StyledFooter>
     )
 }
+
+const ArrowWrapper = styled.div`
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-image: ${theme.colors.secondaryAccent};
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+`
 
 const StyledFooter = styled.footer`
     padding: 50px 0;

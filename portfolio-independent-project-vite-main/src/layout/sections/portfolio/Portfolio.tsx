@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Slider} from "../../../components/slider/Slider.tsx";
+import {CarouselSlider} from "../../../components/slider/Slider.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {Title} from "../../../components/Title.tsx";
 import {theme} from "../../../styles/Theme.ts";
@@ -9,7 +9,7 @@ export const Portfolio = () => {
         <StyledPortfolio id={"portfolio"}>
             <Container className={"portfolio"}>
                 <Title text={"Portfolio"}/>
-                <Slider/>
+                <CarouselSlider/>
             </Container>
         </StyledPortfolio>
     )
