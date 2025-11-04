@@ -20,16 +20,12 @@ export const MobileMenu = () => {
 }
 
 const StyledMobileMenu = styled.nav`
-    display: none;
-    
-    @media screen and (max-width: 768px){
-        display: block;
-    }
+
 `
 
 const MobileMenuPopup = styled.div<{isOpen: boolean}>`
     position: fixed;
-    background-color: rgba(31, 31, 32, 0.9);
+    background-color: rgba(31, 31, 31, 0.95);
     top: 0;
     left: 0;
     right: 0;
@@ -42,7 +38,6 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
         justify-content: center;
         align-items: center;
     `}
-    
     ul {
         display: flex;
         flex-direction: column;

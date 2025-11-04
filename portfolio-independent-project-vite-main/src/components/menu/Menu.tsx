@@ -43,12 +43,12 @@ const StyledMenu = styled.nav`
 `
 
 const StyledUl = styled.ul`
-    display: flex;
-    gap: 145px;
+        display: flex;
+        gap: 145px;
 
-    @media (max-width: 1100px){
-        gap: 65px;
-    }
+        @media (max-width: 1100px){
+            gap: 65px;
+        }
 `
 
 const NavLink = styled(Link)`
