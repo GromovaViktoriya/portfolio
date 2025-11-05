@@ -48,5 +48,4 @@ export const Button = styled.button`
         top: 0;
         border-radius: 10px;
     }
-
 `

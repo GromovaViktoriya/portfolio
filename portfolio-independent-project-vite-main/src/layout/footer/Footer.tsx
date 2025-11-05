@@ -54,6 +54,8 @@ const ArrowWrapper = styled.div`
         transform: translate(-50%, -50%);
         z-index: -1;
     }
+    
+    
 `
 
 const StyledFooter = styled.footer`
